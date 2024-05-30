@@ -4,7 +4,6 @@ import cors from "cors";
 import bodyParser from "body-parser";
 
 import ChatRoute from "./routes/ChatRoute";
-import EchoRoute from "./routes/EchoRoute";
 
 dotenv.config();
 const PORT = process.env.PORT;
@@ -14,14 +13,13 @@ const app = express();
 // Configure CORS
 app.use(cors());
 
-app.use(bodyParser.json());
+app.use(bodyParser.text());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
 const version = "/api/v1";
 
 app.use(`${version}/chat`, ChatRoute);
-app.use(`${version}/echoes`, EchoRoute);
 
 app
   .listen(PORT, () => {

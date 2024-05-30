@@ -1,3 +1,0 @@
-interface IChat {
-    chat(): string;
-}

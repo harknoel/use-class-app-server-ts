@@ -1,80 +1,15 @@
-export const CLASS_INSTRUCTIONS = `
-Step 1: Identify Classes
-Generate the JSON output for the classes with attributes and methods based on the use cases.
-`
-export const CLASS_JSON_FORMAT = `
-{
-  "title": "<Title of the Diagram>",
-  "classes": [
-    {
-      "name": "<Class Name>",
-      "attributes": {
-        "<attribute_name>": "<attribute_type>",
-        "<attribute_name>": "<attribute_type>",
-        "<attribute_name>": "<attribute_type>"
-      },
-      "methods": [
-        "<method_name()>",
-        "<method_name()>"
-      ]
-    },
-    {
-      "name": "<Class Name>",
-      "attributes": {
-        "<attribute_name>": "<attribute_type>",
-        "<attribute_name>": "<attribute_type>"
-      },
-      "methods": [
-        "<method_name()>",
-        "<method_name()>"
-      ]
-    },
-    {
-      "name": "<Class Name>",
-      "attributes": {
-        "<attribute_name>": "<attribute_type>",
-        "<attribute_name>": "<attribute_type>",
-        "<attribute_name>": "<attribute_type>"
-      }
-    }
-  ]
-}
-`
-export const RELATIONSHIP_INSTRUCTIONS = `
-Step 2: Define Relationships
-Generate the JSON output for the relationships between the classes.
-`
-export const RELATIONSHIP_JSON_FORMAT = `
-{
-  "relationships": [
-    {
-      "from": "<Class Name>",
-      "to": "<Class Name>",
-      "type": "<relationship_type>",
-      "multiplicity": {
-        "from": "<multiplicity_from>",
-        "to": "<multiplicity_to>"
-      },
-      "label": "<relationship_label>"
-    },
-    {
-      "from": "<Class Name>",
-      "to": "<Class Name>",
-      "type": "<relationship_type>",
-      "multiplicity": {
-        "from": "<multiplicity_from>",
-        "to": "<multiplicity_to>"
-      },
-      "label": "<relationship_label>"
-    }
-  ]
-}
+export const CLASS_INSTRUCTION = `
+Instructions:
+1. Class Identification: For each actor and significant noun in the use cases, identify the corresponding classes.
+2. Define Attributes: Based on the use cases, define relevant attributes for each class.
+3. Define Methods: Define methods for each class corresponding to the use cases.
+4. Establish Relationships: Create associations between classes to reflect interactions in the use cases.
+5. Use Clear Naming Conventions: Use clear and consistent naming for attributes, methods, and relationships.
 
+Use the JSON format and output raw the JSON only:
 `
-export const COMBINED_INSTRUCTIONS = `
-Combine the JSON outputs from Step 1 (Identify Classes) and Step 2 (Define Relationships) into a single JSON object. The final JSON object should include both the "title", "classes", and "relationships" sections.
-`
-export const COMBINED_JSON_FORMAT = `
+
+export const CLASS_JSON_FORMAT = `
 {
   "title": "<Title of the Diagram>",
   "classes": [
@@ -133,4 +68,5 @@ export const COMBINED_JSON_FORMAT = `
     }
   ]
 }
+
 `
