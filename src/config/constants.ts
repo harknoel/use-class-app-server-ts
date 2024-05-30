@@ -6,6 +6,7 @@ Instructions:
 4. Establish Relationships: Create associations between classes to reflect interactions in the use cases.
 5. Use Clear Naming Conventions: Use clear and consistent naming for attributes, methods, and relationships.
 
+ENSURE THAT THE OUTPUT MUST ONLY BE A JSON. THERE'S NO NEED OF EXPLAINATION. DO NOT FORMAT IT TO A JSON JUST OUTPUT THE JSON TEXT ONLY.
 Use the JSON format and output raw the JSON only:
 `
 
