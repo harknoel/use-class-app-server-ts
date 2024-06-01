@@ -5,6 +5,7 @@ const chatService = new ChatService();
 
 export const convert = async (req: Request, res: Response) => {
   try {
+    console.log(req.body);
     const chat = await chatService.convert(req.body);
     res.json(chat);
   } catch (error) {

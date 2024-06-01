@@ -3,6 +3,6 @@ import express from "express";
 
 const router = express.Router();
 
-router.get('/convert', convert)
+router.post('/convert', convert)
 
 export default router;
