@@ -8,6 +8,7 @@ export class ChatService {
     try {
       const userPrompt = new Prompt(plantUML, CLASS_INSTRUCTION, CLASS_JSON_FORMAT)
       const response = await chatUtil(userPrompt.prompt)
+      console.log(plantUML)
       console.log(response)
       return JSON.parse(response)
     } catch (error) {
