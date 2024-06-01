@@ -2,7 +2,7 @@ export const CLASS_INSTRUCTION = `
 Instructions:
 1. Class Identification: For each actor and significant noun in the use cases, identify the corresponding classes. Don't Use Object as a class name.
 2. Define Attributes: Based on the use cases, define relevant attributes for each class. The no. of attributes must be 2 or more.
-3. Define Methods: Define methods for each class corresponding to the use cases. 
+3. Define Methods: Define methods for each class corresponding to the use cases. The no. of attributes must be 2 or more.
 4. Establish Relationships: Create associations between classes to reflect interactions in the use cases.
 5. Use Clear Naming Conventions: Use clear and consistent naming for attributes, methods, and relationships. 
 
