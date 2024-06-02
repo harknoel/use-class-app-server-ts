@@ -13,8 +13,6 @@ export class ChatService {
       );
       const response = await chatUtil(userPrompt.prompt);
       const cleanJSON = cleanAndParseJSON(response)
-      // console.log(response)
-      // console.log(cleanJSON)
       return JSON.parse(cleanJSON);
     } catch (error) {
       console.error("Error in ChatService convert method:", error);

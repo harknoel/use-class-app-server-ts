@@ -1,8 +1,9 @@
-import { convert } from "../controllers/ChatController";
-import express from "express";
+import ChatController from "../controllers/ChatController";
+import express, { Request, Response } from "express";
 
 const router = express.Router();
+const chatController = new ChatController();
 
-router.post('/convert', convert)
+router.post('/convert', (req: Request, res: Response) => chatController.convert(req, res));
 
 export default router;
