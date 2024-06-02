@@ -19,3 +19,15 @@ module.exports.chatUtil = async (prompt: string) => {
     throw error;
   }
 };
+
+module.exports.cleanAndParseJSON = (input:string) => {
+try {
+    // Remove backticks, the word "json", and trim any leading/trailing whitespace
+    const cleanedInput = input.replace(/```json/g, '').replace(/```/g, '').trim();
+    // Parse the cleaned JSON string
+    return cleanedInput;
+  } catch (error) {
+    console.error('Error parsing JSON:', error);
+    return null;
+  }
+}
